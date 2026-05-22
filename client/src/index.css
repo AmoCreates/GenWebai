@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: inherit;
+}
+
+button:focus {
+  transform: scale(0.95);
+}
+
+.credits2 {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background-color: white;
+}
+
+@media (max-width: 500px) {
+  .credits {
+    display: none;
+  }
+
+  .credits2 {
+    display: block;
+  }
+}
