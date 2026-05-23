@@ -111,7 +111,7 @@ const Home = () => {
         );
         setWebsites(sortedWebsites);
       } catch (error) {
-        setErr(getErrorMessage(error));
+        setErr(getErrorMessage("Please enable cookies",error));
         console.error("Update Error:", error.response?.data || error.message);
       } finally {
         setloading(false);
